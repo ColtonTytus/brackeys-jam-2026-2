@@ -9,4 +9,4 @@ func attack_primary() -> void:
 	
 	instance.direction = Vector2(cos(global_rotation), sin(global_rotation))
 	
-	GameManager.add_child(instance)
+	GameManager.level_root.add_child(instance)

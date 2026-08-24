@@ -5,6 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://cty4w8ox6h34" path="res://src/entities/weapons/revolver.tscn" id="3_23jjq"]
 [ext_resource type="Script" uid="uid://b2u0ovkk22toe" path="res://src/entities/player/movement.gd" id="3_qfbsq"]
 [ext_resource type="Script" uid="uid://1ipne2d8y5o5" path="res://src/entities/player/weapon.gd" id="5_jwpyx"]
+[ext_resource type="PackedScene" uid="uid://dbbyop5pn56x2" path="res://src/ui/hud.tscn" id="6_4dfh7"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_v4d5o"]
 size = Vector2(94, 224)
@@ -35,5 +36,8 @@ script = ExtResource("3_qfbsq")
 [node name="weapon" type="Node" parent="controllers" unique_id=438674076 node_paths=PackedStringArray("_weapon_axis")]
 script = ExtResource("5_jwpyx")
 _weapon_axis = NodePath("../../weapon_axis")
+
+[node name="HUD" parent="." unique_id=1039786167 node_paths=PackedStringArray("player") instance=ExtResource("6_4dfh7")]
+player = NodePath("..")
 
 [connection signal="child_entered_tree" from="weapon_axis" to="controllers/weapon" method="_on_weapon_pickup"]

@@ -1,6 +1,7 @@
 extends Node
 
 enum Context {
+	MENU,
 	GAMEPLAY,
 	CUTSCENE,
 	DIALOGUE,
@@ -9,14 +10,22 @@ enum Context {
 
 signal changed(new_ctx: Context)
 
+const MENU := Context.MENU
+const GAMEPLAY := Context.GAMEPLAY
+const CUTSCENE := Context.CUTSCENE
+const DIALOGUE := Context.DIALOGUE
+const PAUSED := Context.PAUSED
+
 var _stack: Array[Context] = []
 
 func _init() -> void:
 	process_mode = Node.PROCESS_MODE_ALWAYS
 
 func current() -> Context:
-	var back = _stack.back()
-	return back if back else Context.GAMEPLAY
+	if _stack.is_empty():
+		return Context.MENU
+	else:
+		return _stack.back()
 
 func push(ctx: Context) -> void:
 	_stack.append(ctx)

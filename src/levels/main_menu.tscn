@@ -1,0 +1,83 @@
+[gd_scene format=3 uid="uid://fq6l6eoj14wy"]
+
+[ext_resource type="Script" uid="uid://5ayupk3dcu3e" path="res://src/levels/main_menu.gd" id="1_0ukkc"]
+[ext_resource type="Theme" uid="uid://bmpmsyouko8nx" path="res://assets/basic_theme.tres" id="1_4hslj"]
+[ext_resource type="Texture2D" uid="uid://ua0yq201k5od" path="res://assets/img/title_image.png" id="2_0ukkc"]
+
+[node name="MainMenu" type="Control" unique_id=1840704109]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_0ukkc")
+first_level = "uid://duv8jlv3uauln"
+
+[node name="buttons" type="VBoxContainer" parent="." unique_id=387133329]
+custom_minimum_size = Vector2(400, 400)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.91
+anchor_right = 0.5
+anchor_bottom = 0.91
+offset_left = -250.0
+offset_top = -500.0
+offset_right = 250.0
+grow_horizontal = 2
+grow_vertical = 0
+theme = ExtResource("1_4hslj")
+theme_override_constants/separation = 25
+alignment = 1
+
+[node name="Start" type="Button" parent="buttons" unique_id=269903949]
+layout_mode = 2
+size_flags_vertical = 3
+theme = ExtResource("1_4hslj")
+theme_override_font_sizes/font_size = 48
+text = "Start Game"
+
+[node name="Settings" type="Button" parent="buttons" unique_id=54737716]
+layout_mode = 2
+size_flags_vertical = 3
+theme = ExtResource("1_4hslj")
+theme_override_font_sizes/font_size = 48
+text = "Settings"
+
+[node name="Credits" type="Button" parent="buttons" unique_id=992366856]
+layout_mode = 2
+size_flags_vertical = 3
+theme = ExtResource("1_4hslj")
+theme_override_font_sizes/font_size = 48
+text = "Credits"
+
+[node name="Exit" type="Button" parent="buttons" unique_id=507356947]
+layout_mode = 2
+size_flags_vertical = 3
+theme = ExtResource("1_4hslj")
+theme_override_font_sizes/font_size = 48
+text = "Exit"
+
+[node name="title" type="HBoxContainer" parent="." unique_id=419431517]
+custom_maximum_size = Vector2(-1, 400)
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 400.0
+grow_horizontal = 2
+theme = ExtResource("1_4hslj")
+alignment = 1
+
+[node name="image" type="TextureRect" parent="title" unique_id=492139069]
+layout_mode = 2
+size_flags_horizontal = 3
+theme = ExtResource("1_4hslj")
+texture = ExtResource("2_0ukkc")
+expand_mode = 4
+stretch_mode = 5
+
+[connection signal="pressed" from="buttons/Start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="buttons/Settings" to="." method="_on_settings_pressed"]
+[connection signal="pressed" from="buttons/Credits" to="." method="_on_credits_pressed"]
+[connection signal="pressed" from="buttons/Exit" to="." method="_on_exit_pressed"]

@@ -1,0 +1,59 @@
+[gd_scene format=3 uid="uid://bmwrcy2poupqd"]
+
+[ext_resource type="Theme" uid="uid://bmpmsyouko8nx" path="res://assets/basic_theme.tres" id="1_b601g"]
+[ext_resource type="Script" uid="uid://ddrx2poyqxqe7" path="res://src/singletons/pause_menu.gd" id="1_hqxlx"]
+
+[node name="PauseMenu" type="CanvasLayer" unique_id=1040585638]
+process_mode = 3
+layer = 100
+script = ExtResource("1_hqxlx")
+
+[node name="background" type="ColorRect" parent="." unique_id=211054212]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.75000006)
+
+[node name="buttons" type="VBoxContainer" parent="." unique_id=1757329592]
+custom_minimum_size = Vector2(400, 400)
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -250.0
+offset_top = -250.0
+offset_right = 250.0
+offset_bottom = 250.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_b601g")
+theme_override_constants/separation = 25
+alignment = 1
+
+[node name="Resume" type="Button" parent="buttons" unique_id=691991676]
+layout_mode = 2
+size_flags_vertical = 3
+theme = ExtResource("1_b601g")
+theme_override_font_sizes/font_size = 48
+text = "Resume"
+
+[node name="Settings" type="Button" parent="buttons" unique_id=515715035]
+layout_mode = 2
+size_flags_vertical = 3
+theme = ExtResource("1_b601g")
+theme_override_font_sizes/font_size = 48
+text = "Settings"
+
+[node name="BackToMain" type="Button" parent="buttons" unique_id=1681334932]
+layout_mode = 2
+size_flags_vertical = 3
+theme = ExtResource("1_b601g")
+theme_override_font_sizes/font_size = 48
+text = "Back to main menu"
+
+[connection signal="pressed" from="buttons/Resume" to="." method="_on_resume_pressed"]
+[connection signal="pressed" from="buttons/Settings" to="." method="_on_settings_pressed"]
+[connection signal="pressed" from="buttons/BackToMain" to="." method="_on_back_to_main_pressed"]

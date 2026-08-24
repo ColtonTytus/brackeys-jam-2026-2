@@ -1,0 +1,66 @@
+[gd_scene format=3 uid="uid://dbbyop5pn56x2"]
+
+[ext_resource type="Script" uid="uid://bq2kfwpasd0f4" path="res://src/ui/hud.gd" id="1_4rn03"]
+[ext_resource type="Theme" uid="uid://bmpmsyouko8nx" path="res://assets/basic_theme.tres" id="1_eqvli"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4rn03"]
+bg_color = Color(0.74, 0, 0, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_bottom = 2
+border_color = Color(0.80228126, 0.8429128, 0.94489616, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_snmo6"]
+bg_color = Color(0.23529412, 0.40392157, 0.69411767, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_bottom = 2
+
+[node name="HUD" type="CanvasLayer" unique_id=1039786167]
+layer = 10
+script = ExtResource("1_4rn03")
+
+[node name="ControlHealth" type="Control" parent="." unique_id=1087525417]
+layout_mode = 3
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -150.0
+offset_right = 500.0
+grow_vertical = 0
+
+[node name="HealthBar" type="ProgressBar" parent="ControlHealth" unique_id=337795435]
+custom_minimum_size = Vector2(300, 50)
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -300.0
+offset_bottom = 50.0
+grow_horizontal = 0
+theme = ExtResource("1_eqvli")
+theme_override_styles/fill = SubResource("StyleBoxFlat_4rn03")
+value = 50.0
+show_percentage = false
+
+[node name="ControlMana" type="Control" parent="." unique_id=2001095571]
+layout_mode = 3
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -500.0
+offset_top = -150.0
+grow_horizontal = 0
+grow_vertical = 0
+
+[node name="ManaBar" type="ProgressBar" parent="ControlMana" unique_id=1108004524]
+custom_minimum_size = Vector2(300, 50)
+layout_mode = 1
+offset_right = 300.0
+offset_bottom = 50.0
+theme = ExtResource("1_eqvli")
+theme_override_styles/fill = SubResource("StyleBoxFlat_snmo6")
+value = 50.0
+show_percentage = false

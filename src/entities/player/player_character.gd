@@ -5,3 +5,6 @@ class_name PlayerCharacter extends CharacterBody2D
 
 var cur_health := max_health
 var cur_mana := max_mana
+
+func _ready() -> void:
+	GameManager.player_character = self

@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Brackeys_jam_2026_2"
-run/main_scene="uid://dgnx4fvtcoots"
+run/main_scene="uid://fq6l6eoj14wy"
 config/features=PackedStringArray("4.7", "Forward Plus")
 boot_splash/bg_color=Color(0, 0, 0, 1)
 boot_splash/image="uid://cjqaiq3mwhjn1"
@@ -23,11 +23,12 @@ buses/default_bus_layout="uid://c6hgyhxosfw1t"
 
 [autoload]
 
+BeehaveGlobalDebugger="*uid://bl3ma400hpvsh"
+BeehaveGlobalMetrics="*uid://c3ktl6ontsdt7"
 EventBus="*uid://b6kbca5mt6scj"
 ContextManager="*uid://dp1bjckpbimgv"
 GameManager="*uid://cjex6vpjinhyx"
-BeehaveGlobalMetrics="*uid://c3ktl6ontsdt7"
-BeehaveGlobalDebugger="*uid://bl3ma400hpvsh"
+PauseMenu="*uid://bmwrcy2poupqd"
 
 [display]
 
