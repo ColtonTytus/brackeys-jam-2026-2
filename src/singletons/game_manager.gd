@@ -15,16 +15,17 @@ var music_index : Dictionary[int, AudioStream]
 
 
 func _ready() -> void:
-	init_music()
-	init_levels()
-	play_track(0)
-	EventBus.connect("level_cleared", _on_level_cleared)
-	EventBus.connect("player_health_depleted", _on_player_health_depleted)
-	EventBus.connect("ui_start_game", _on_start_game)
-	EventBus.connect("ui_pause", _on_ui_pause)
-	EventBus.connect ("ui_resume", _on_ui_resume)
-	EventBus.connect("ui_exit", _on_exit_pressed)
-	EventBus.connect("ui_back_to_menu", _on_ui_back_to_menu)
+	pass
+	#init_music()
+	#init_levels()
+	#play_track(0)
+	#EventBus.connect("level_cleared", _on_level_cleared)
+	#EventBus.connect("player_health_depleted", _on_player_health_depleted)
+	#EventBus.connect("ui_start_game", _on_start_game)
+	#EventBus.connect("ui_pause", _on_ui_pause)
+	#EventBus.connect ("ui_resume", _on_ui_resume)
+	#EventBus.connect("ui_exit", _on_exit_pressed)
+	#EventBus.connect("ui_back_to_menu", _on_ui_back_to_menu)
 
 
 func _on_start_game():

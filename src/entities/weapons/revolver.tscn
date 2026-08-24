@@ -2,11 +2,17 @@
 
 [ext_resource type="Script" uid="uid://cor5sqnucef5t" path="res://src/entities/weapons/revolver.gd" id="1_tnudv"]
 [ext_resource type="Texture2D" uid="uid://c5lvq71q4av3a" path="res://assets/placeholder/revolver.png" id="2_4xo5w"]
+[ext_resource type="PackedScene" uid="uid://b5kcs5t3o5ea8" path="res://src/entities/projectiles/bullet.tscn" id="2_imjcb"]
 
-[node name="Revolver" type="Node2D" unique_id=440679668]
+[node name="Revolver" type="Node2D" unique_id=2073563590 node_paths=PackedStringArray("tip")]
 script = ExtResource("1_tnudv")
-length = 115.0
+projectile = ExtResource("2_imjcb")
+tip = NodePath("tip")
+metadata/_custom_type_script = "uid://c11mvsjcvwi7k"
 
 [node name="Revolver" type="Sprite2D" parent="." unique_id=1917048690]
-position = Vector2(29.99, 20.35)
+position = Vector2(28, 20.35)
 texture = ExtResource("2_4xo5w")
+
+[node name="tip" type="Node2D" parent="." unique_id=394957846]
+position = Vector2(100, 0)

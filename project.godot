@@ -25,6 +25,7 @@ buses/default_bus_layout="uid://c6hgyhxosfw1t"
 
 EventBus="*uid://b6kbca5mt6scj"
 ContextManager="*uid://dp1bjckpbimgv"
+GameManager="*uid://cjex6vpjinhyx"
 BeehaveGlobalMetrics="*uid://c3ktl6ontsdt7"
 BeehaveGlobalDebugger="*uid://bl3ma400hpvsh"
 
@@ -93,8 +94,18 @@ pause={
 ]
 }
 
+[layer_names]
+
+2d_physics/layer_1="Default"
+2d_physics/layer_2="Environment"
+2d_physics/layer_3="Player"
+2d_physics/layer_4="Teammate"
+2d_physics/layer_5="Enemy"
+2d_physics/layer_6="Projectile"
+
 [physics]
 
+common/physics_ticks_per_second=120
 3d/physics_engine="Jolt Physics"
 2d/default_gravity=0.0
 2d/default_gravity_vector=Vector2(0, 0)

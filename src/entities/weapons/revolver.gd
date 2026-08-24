@@ -1,1 +1,1 @@
-class_name RevolverWeapon extends Weapon
+class_name RevolverWeapon extends ProjectileWeapon
