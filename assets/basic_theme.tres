@@ -1,0 +1,86 @@
+[gd_resource type="Theme" format=3 uid="uid://bmpmsyouko8nx"]
+
+[ext_resource type="FontFile" uid="uid://6yuvooqy58ij" path="res://assets/fonts/Aileron-Thin.otf" id="1_1wj2k"]
+[ext_resource type="FontFile" uid="uid://bd20yqsxuhtqb" path="res://assets/fonts/Aileron-SemiBold.otf" id="2_k8bpi"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1wj2k"]
+bg_color = Color(0.15622473, 0.18859479, 0.21429479, 1)
+border_width_left = 50
+border_width_right = 50
+border_width_bottom = 5
+border_color = Color(0.80228126, 0.8429128, 0.94489616, 1)
+border_blend = true
+expand_margin_bottom = 3.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_d6p0g"]
+bg_color = Color(0.15686275, 0.1882353, 0.21568628, 1)
+border_width_bottom = 5
+border_color = Color(0.80228126, 0.8429128, 0.94489616, 1)
+border_blend = true
+expand_margin_bottom = 3.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wfto7"]
+bg_color = Color(0.108681105, 0.13313374, 0.15452537, 1)
+border_width_left = 50
+border_width_right = 50
+border_color = Color(0, 0, 0, 0)
+border_blend = true
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_h4qaw"]
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_u5ka5"]
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_2sqiy"]
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_u58vq"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hj1ny"]
+bg_color = Color(0.15686275, 0.1882353, 0.21568628, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_bottom = 2
+expand_margin_top = 15.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vejk0"]
+bg_color = Color(0.80228126, 0.8429128, 0.94489616, 1)
+expand_margin_top = 15.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nmrue"]
+content_margin_top = 15.0
+content_margin_bottom = 15.0
+bg_color = Color(0.8024569, 0.84283847, 0.9448032, 0)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.80228126, 0.8429128, 0.94489616, 1)
+expand_margin_top = 15.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_opxcq"]
+bg_color = Color(0.60038817, 0.60038817, 0.60038817, 0)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.80228126, 0.8429128, 0.94489616, 1)
+
+[resource]
+Button/font_sizes/font_size = 24
+Button/fonts/font = ExtResource("1_1wj2k")
+Button/styles/hover = SubResource("StyleBoxFlat_1wj2k")
+Button/styles/normal = SubResource("StyleBoxFlat_d6p0g")
+Button/styles/pressed = SubResource("StyleBoxFlat_wfto7")
+HSlider/icons/grabber = SubResource("PlaceholderTexture2D_h4qaw")
+HSlider/icons/grabber_disabled = SubResource("PlaceholderTexture2D_u5ka5")
+HSlider/icons/grabber_highlight = SubResource("PlaceholderTexture2D_2sqiy")
+HSlider/icons/tick = SubResource("PlaceholderTexture2D_u58vq")
+HSlider/styles/grabber_area = SubResource("StyleBoxFlat_hj1ny")
+HSlider/styles/grabber_area_highlight = SubResource("StyleBoxFlat_vejk0")
+HSlider/styles/slider = SubResource("StyleBoxFlat_nmrue")
+Label/font_sizes/font_size = 32
+Label/fonts/font = ExtResource("1_1wj2k")
+LineEdit/fonts/font = ExtResource("2_k8bpi")
+ProgressBar/styles/background = SubResource("StyleBoxFlat_opxcq")
+TabBar/fonts/font = ExtResource("2_k8bpi")
+Tree/fonts/font = ExtResource("2_k8bpi")
+Tree/fonts/title_button_font = ExtResource("2_k8bpi")

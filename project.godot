@@ -24,6 +24,7 @@ buses/default_bus_layout="uid://c6hgyhxosfw1t"
 [autoload]
 
 EventBus="*uid://b6kbca5mt6scj"
+ContextManager="*uid://dp1bjckpbimgv"
 
 [display]
 
