@@ -1,9 +1,9 @@
 [gd_scene format=3 uid="uid://dgnx4fvtcoots"]
 
-[ext_resource type="PackedScene" uid="uid://c6sytg3wwng7u" path="res://src/entities/player_character.tscn" id="1_ayfpl"]
+[ext_resource type="PackedScene" uid="uid://c6sytg3wwng7u" path="res://src/entities/player/player_character.tscn" id="1_ayfpl"]
 [ext_resource type="PackedScene" uid="uid://duv8jlv3uauln" path="res://src/levels/level_template.tscn" id="2_msblc"]
 [ext_resource type="AudioStream" uid="uid://0nrxhmdrcqy6" path="res://assets/audio/music/Countdown_Music_Loopable.ogg" id="3_n7f27"]
-[ext_resource type="Theme" uid="uid://bmpmsyouko8nx" path="res://assets/basic_theme.tres" id="4_yyl7s"]
+[ext_resource type="Theme" uid="uid://bmpmsyouko8nx" path="res://assets/basic_theme.tres" id="4_ayfpl"]
 [ext_resource type="Texture2D" uid="uid://ua0yq201k5od" path="res://assets/img/title_image.png" id="5_avdrg"]
 
 [sub_resource type="GDScript" id="GDScript_ukng3"]
@@ -244,7 +244,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-theme = ExtResource("4_yyl7s")
+theme = ExtResource("4_ayfpl")
 
 [node name="ControlHealth" type="Control" parent="UIManager/HUD" unique_id=1808333693]
 layout_mode = 1
@@ -264,7 +264,7 @@ anchor_right = 1.0
 offset_left = -300.0
 offset_bottom = 50.0
 grow_horizontal = 0
-theme = ExtResource("4_yyl7s")
+theme = ExtResource("4_ayfpl")
 theme_override_styles/fill = SubResource("StyleBoxFlat_8gy0j")
 value = 50.0
 show_percentage = false
@@ -286,7 +286,7 @@ custom_minimum_size = Vector2(300, 50)
 layout_mode = 1
 offset_right = 300.0
 offset_bottom = 50.0
-theme = ExtResource("4_yyl7s")
+theme = ExtResource("4_ayfpl")
 theme_override_styles/fill = SubResource("StyleBoxFlat_jpahb")
 value = 50.0
 show_percentage = false
@@ -298,7 +298,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-theme = ExtResource("4_yyl7s")
+theme = ExtResource("4_ayfpl")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="UIManager/Main" unique_id=28584661]
 custom_minimum_size = Vector2(400, 400)
@@ -313,35 +313,35 @@ offset_top = -500.0
 offset_right = 250.0
 grow_horizontal = 2
 grow_vertical = 0
-theme = ExtResource("4_yyl7s")
+theme = ExtResource("4_ayfpl")
 theme_override_constants/separation = 25
 alignment = 1
 
 [node name="Start" type="Button" parent="UIManager/Main/VBoxContainer" unique_id=1278457197]
 layout_mode = 2
 size_flags_vertical = 3
-theme = ExtResource("4_yyl7s")
+theme = ExtResource("4_ayfpl")
 theme_override_font_sizes/font_size = 48
 text = "Start Game"
 
 [node name="Settings" type="Button" parent="UIManager/Main/VBoxContainer" unique_id=867331770]
 layout_mode = 2
 size_flags_vertical = 3
-theme = ExtResource("4_yyl7s")
+theme = ExtResource("4_ayfpl")
 theme_override_font_sizes/font_size = 48
 text = "Settings"
 
 [node name="Credits" type="Button" parent="UIManager/Main/VBoxContainer" unique_id=1006357235]
 layout_mode = 2
 size_flags_vertical = 3
-theme = ExtResource("4_yyl7s")
+theme = ExtResource("4_ayfpl")
 theme_override_font_sizes/font_size = 48
 text = "Credits"
 
 [node name="Exit" type="Button" parent="UIManager/Main/VBoxContainer" unique_id=905313023]
 layout_mode = 2
 size_flags_vertical = 3
-theme = ExtResource("4_yyl7s")
+theme = ExtResource("4_ayfpl")
 theme_override_font_sizes/font_size = 48
 text = "Exit"
 
@@ -351,13 +351,13 @@ layout_mode = 1
 anchors_preset = 10
 anchor_right = 1.0
 grow_horizontal = 2
-theme = ExtResource("4_yyl7s")
+theme = ExtResource("4_ayfpl")
 alignment = 1
 
 [node name="TextureRect" type="TextureRect" parent="UIManager/Main/HBoxContainer" unique_id=218007841]
 layout_mode = 2
 size_flags_horizontal = 3
-theme = ExtResource("4_yyl7s")
+theme = ExtResource("4_ayfpl")
 texture = ExtResource("5_avdrg")
 expand_mode = 4
 stretch_mode = 5
@@ -368,7 +368,7 @@ layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
-theme = ExtResource("4_yyl7s")
+theme = ExtResource("4_ayfpl")
 
 [node name="VBoxContainer2" type="VBoxContainer" parent="UIManager/Pause" unique_id=355372218]
 custom_minimum_size = Vector2(400, 400)
@@ -384,35 +384,35 @@ offset_right = 1190.0
 offset_bottom = 946.4
 grow_horizontal = 2
 grow_vertical = 0
-theme = ExtResource("4_yyl7s")
+theme = ExtResource("4_ayfpl")
 theme_override_constants/separation = 25
 alignment = 1
 
 [node name="Resume" type="Button" parent="UIManager/Pause/VBoxContainer2" unique_id=1780008734]
 layout_mode = 2
 size_flags_vertical = 3
-theme = ExtResource("4_yyl7s")
+theme = ExtResource("4_ayfpl")
 theme_override_font_sizes/font_size = 48
 text = "Resume"
 
 [node name="Settings" type="Button" parent="UIManager/Pause/VBoxContainer2" unique_id=549115892]
 layout_mode = 2
 size_flags_vertical = 3
-theme = ExtResource("4_yyl7s")
+theme = ExtResource("4_ayfpl")
 theme_override_font_sizes/font_size = 48
 text = "Settings"
 
 [node name="Credits" type="Button" parent="UIManager/Pause/VBoxContainer2" unique_id=176631434]
 layout_mode = 2
 size_flags_vertical = 3
-theme = ExtResource("4_yyl7s")
+theme = ExtResource("4_ayfpl")
 theme_override_font_sizes/font_size = 48
 text = "Credits"
 
 [node name="BackToMain" type="Button" parent="UIManager/Pause/VBoxContainer2" unique_id=452758130]
 layout_mode = 2
 size_flags_vertical = 3
-theme = ExtResource("4_yyl7s")
+theme = ExtResource("4_ayfpl")
 theme_override_font_sizes/font_size = 48
 text = "Back to main menu"
 
@@ -424,7 +424,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-theme = ExtResource("4_yyl7s")
+theme = ExtResource("4_ayfpl")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="UIManager/Settings" unique_id=1064761490]
 custom_minimum_size = Vector2(500, 0)
@@ -435,21 +435,21 @@ anchor_top = 0.1
 anchor_right = 0.249
 anchor_bottom = 0.9
 grow_vertical = 2
-theme = ExtResource("4_yyl7s")
+theme = ExtResource("4_ayfpl")
 theme_override_constants/separation = 16
 
 [node name="MusicVolume" type="Label" parent="UIManager/Settings/VBoxContainer" unique_id=47607737]
 custom_minimum_size = Vector2(0, 80)
 layout_mode = 2
 offset_transform_position = Vector2(-50, 0)
-theme = ExtResource("4_yyl7s")
+theme = ExtResource("4_ayfpl")
 theme_override_font_sizes/font_size = 48
 text = "Music Volume"
 
 [node name="MusicVolumeSlider" type="HSlider" parent="UIManager/Settings/VBoxContainer" unique_id=1930712124]
 custom_minimum_size = Vector2(300, 30)
 layout_mode = 2
-theme = ExtResource("4_yyl7s")
+theme = ExtResource("4_ayfpl")
 max_value = 1.0
 step = 0.05
 value = 0.7
@@ -457,20 +457,20 @@ value = 0.7
 [node name="Control" type="Control" parent="UIManager/Settings/VBoxContainer" unique_id=2001632374]
 custom_minimum_size = Vector2(0, 20)
 layout_mode = 2
-theme = ExtResource("4_yyl7s")
+theme = ExtResource("4_ayfpl")
 
 [node name="SFXVolume" type="Label" parent="UIManager/Settings/VBoxContainer" unique_id=1319733210]
 custom_minimum_size = Vector2(0, 80)
 layout_mode = 2
 offset_transform_position = Vector2(-50, 0)
-theme = ExtResource("4_yyl7s")
+theme = ExtResource("4_ayfpl")
 theme_override_font_sizes/font_size = 48
 text = "Sound Effects Volume"
 
 [node name="SFXVolumeSlider" type="HSlider" parent="UIManager/Settings/VBoxContainer" unique_id=926870032]
 custom_minimum_size = Vector2(300, 30)
 layout_mode = 2
-theme = ExtResource("4_yyl7s")
+theme = ExtResource("4_ayfpl")
 theme_override_icons/tick = SubResource("DPITexture_opxcq")
 max_value = 1.0
 step = 0.05
@@ -487,14 +487,14 @@ offset_left = -506.0
 offset_top = -257.0
 grow_horizontal = 0
 grow_vertical = 0
-theme = ExtResource("4_yyl7s")
+theme = ExtResource("4_ayfpl")
 
 [node name="SettingsReturn" type="Button" parent="UIManager/Settings/Control" unique_id=33834681]
 custom_minimum_size = Vector2(300, 100)
 layout_mode = 1
 offset_right = 106.0
 offset_bottom = 43.0
-theme = ExtResource("4_yyl7s")
+theme = ExtResource("4_ayfpl")
 theme_override_font_sizes/font_size = 48
 text = "Return"
 
@@ -506,7 +506,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-theme = ExtResource("4_yyl7s")
+theme = ExtResource("4_ayfpl")
 
 [node name="VBoxContainer2" type="VBoxContainer" parent="UIManager/Credits" unique_id=1606016631]
 custom_minimum_size = Vector2(500, 0)
@@ -518,12 +518,12 @@ anchor_right = 0.249
 anchor_bottom = 0.9
 offset_right = 434.72006
 grow_vertical = 2
-theme = ExtResource("4_yyl7s")
+theme = ExtResource("4_ayfpl")
 theme_override_constants/separation = 16
 
 [node name="Label" type="Label" parent="UIManager/Credits/VBoxContainer2" unique_id=2033762740]
 layout_mode = 2
-theme = ExtResource("4_yyl7s")
+theme = ExtResource("4_ayfpl")
 text = "Colton Tytus - Art, Effects, Design, Programming
 Arujano - Design, Programming
 Cedric Nolin - Music
@@ -545,14 +545,14 @@ offset_left = -506.0
 offset_top = -257.0
 grow_horizontal = 0
 grow_vertical = 0
-theme = ExtResource("4_yyl7s")
+theme = ExtResource("4_ayfpl")
 
 [node name="CreditsReturn" type="Button" parent="UIManager/Credits/Control" unique_id=2021484697]
 custom_minimum_size = Vector2(300, 100)
 layout_mode = 1
 offset_right = 106.0
 offset_bottom = 43.0
-theme = ExtResource("4_yyl7s")
+theme = ExtResource("4_ayfpl")
 theme_override_font_sizes/font_size = 48
 text = "Return"
 
@@ -562,7 +562,7 @@ layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
-theme = ExtResource("4_yyl7s")
+theme = ExtResource("4_ayfpl")
 
 [node name="GameOver" type="Control" parent="UIManager" unique_id=397055743]
 visible = false
@@ -570,7 +570,7 @@ layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
-theme = ExtResource("4_yyl7s")
+theme = ExtResource("4_ayfpl")
 
 [node name="MusicPlayer" type="AudioStreamPlayer" parent="." unique_id=314217840]
 process_mode = 3
