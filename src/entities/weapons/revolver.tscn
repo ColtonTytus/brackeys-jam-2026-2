@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://cty4w8ox6h34"]
+
+[ext_resource type="Script" uid="uid://cor5sqnucef5t" path="res://src/entities/weapons/revolver.gd" id="1_tnudv"]
+[ext_resource type="Texture2D" uid="uid://c5lvq71q4av3a" path="res://assets/placeholder/revolver.png" id="2_4xo5w"]
+
+[node name="Revolver" type="Node2D" unique_id=440679668]
+script = ExtResource("1_tnudv")
+length = 115.0
+
+[node name="Revolver" type="Sprite2D" parent="." unique_id=1917048690]
+position = Vector2(29.99, 20.35)
+texture = ExtResource("2_4xo5w")
