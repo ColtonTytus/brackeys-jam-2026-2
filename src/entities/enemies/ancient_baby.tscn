@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://b5yc4chec8nog"]
+
+[ext_resource type="Script" uid="uid://bm3v1gjg883o" path="res://src/entities/enemies/enemy.gd" id="1_l387w"]
+[ext_resource type="Texture2D" uid="uid://dmxq8axhjuxyi" path="res://assets/placeholder/ancient_baby.png" id="2_41ucq"]
+[ext_resource type="Script" uid="uid://b3obhcqfb1jvb" path="res://src/entities/hitbox.gd" id="3_i4tvd"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4mnc4"]
+size = Vector2(158, 437)
+
+[node name="AncientBaby" type="CharacterBody2D" unique_id=83187789 node_paths=PackedStringArray("hitbox")]
+collision_layer = 16
+collision_mask = 3
+script = ExtResource("1_l387w")
+hitbox = NodePath("HitBox")
+metadata/_custom_type_script = "uid://bm3v1gjg883o"
+
+[node name="AncientBaby" type="Sprite2D" parent="." unique_id=940582141]
+texture = ExtResource("2_41ucq")
+offset = Vector2(-20.04, 0)
+
+[node name="HitBox" type="Area2D" parent="." unique_id=1753935291]
+collision_layer = 16
+collision_mask = 32
+script = ExtResource("3_i4tvd")
+metadata/_custom_type_script = "uid://b3obhcqfb1jvb"
+
+[node name="collider" type="CollisionShape2D" parent="HitBox" unique_id=1168365022]
+position = Vector2(10, -20.5)
+shape = SubResource("RectangleShape2D_4mnc4")

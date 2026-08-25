@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://lcu1smmg5fa3" path="res://src/entities/player/player_character.gd" id="1_b8iv8"]
 [ext_resource type="Texture2D" uid="uid://b7dopohtt4j5o" path="res://assets/placeholder/sid.png" id="2_qfbsq"]
+[ext_resource type="Script" uid="uid://b3obhcqfb1jvb" path="res://src/entities/hitbox.gd" id="3_1eh8o"]
 [ext_resource type="PackedScene" uid="uid://cty4w8ox6h34" path="res://src/entities/weapons/revolver.tscn" id="3_23jjq"]
 [ext_resource type="Script" uid="uid://b2u0ovkk22toe" path="res://src/entities/player/movement.gd" id="3_qfbsq"]
 [ext_resource type="Script" uid="uid://1ipne2d8y5o5" path="res://src/entities/player/weapon.gd" id="5_jwpyx"]
@@ -19,6 +20,15 @@ shape = SubResource("RectangleShape2D_v4d5o")
 [node name="sprite" type="Sprite2D" parent="." unique_id=1326823282]
 texture = ExtResource("2_qfbsq")
 offset = Vector2(24.245, 0)
+
+[node name="HitBox" type="Area2D" parent="." unique_id=792759534]
+collision_layer = 0
+collision_mask = 36
+script = ExtResource("3_1eh8o")
+metadata/_custom_type_script = "uid://b3obhcqfb1jvb"
+
+[node name="collider" type="CollisionShape2D" parent="HitBox" unique_id=1073069247]
+shape = SubResource("RectangleShape2D_v4d5o")
 
 [node name="camera" type="Camera2D" parent="." unique_id=1689757436]
 offset = Vector2(0, -109)

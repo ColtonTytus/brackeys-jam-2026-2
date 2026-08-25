@@ -1,22 +1,21 @@
 [gd_scene format=3 uid="uid://duv8jlv3uauln"]
 
 [ext_resource type="Script" uid="uid://2v4hi3hipxty" path="res://src/levels/level_template.gd" id="1_jmmgl"]
-[ext_resource type="Script" uid="uid://qii2faqrggow" path="res://src/entities/player_spawn.gd" id="2_2ap0n"]
-
-[sub_resource type="Gradient" id="Gradient_c8ppq"]
-colors = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 1)
-
-[sub_resource type="GradientTexture1D" id="GradientTexture1D_jpahb"]
-gradient = SubResource("Gradient_c8ppq")
+[ext_resource type="Script" uid="uid://qii2faqrggow" path="res://src/entities/spawner.gd" id="2_2ap0n"]
+[ext_resource type="PackedScene" uid="uid://c6sytg3wwng7u" path="res://src/entities/player/player_character.tscn" id="3_ync2b"]
+[ext_resource type="PackedScene" uid="uid://b5yc4chec8nog" path="res://src/entities/enemies/ancient_baby.tscn" id="4_88vja"]
 
 [node name="LevelTemplate" type="Node2D" unique_id=1402988813]
+y_sort_enabled = true
 script = ExtResource("1_jmmgl")
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=335280460]
-position = Vector2(-343, -29)
-scale = Vector2(1, 290)
-texture = SubResource("GradientTexture1D_jpahb")
-
-[node name="PlayerSpawn" type="Node2D" parent="." unique_id=1042661953]
+[node name="player_spawner" type="Node2D" parent="." unique_id=250998742]
 script = ExtResource("2_2ap0n")
+entity = ExtResource("3_ync2b")
+metadata/_custom_type_script = "uid://qii2faqrggow"
+
+[node name="enemy_spawner" type="Node2D" parent="." unique_id=2050539285]
+position = Vector2(-750, 176)
+script = ExtResource("2_2ap0n")
+entity = ExtResource("4_88vja")
 metadata/_custom_type_script = "uid://qii2faqrggow"
